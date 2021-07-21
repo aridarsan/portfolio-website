@@ -1,7 +1,7 @@
 import React from "react"
 import '../App.css';
 import AutoTyping, { BlinkCursor } from 'react-auto-typing';
-import { Grid, Container } from '@material-ui/core';
+import { Grid, Container, Button } from '@material-ui/core';
 import ari from "../Images/ari.png"
 import facebook from "../Images/Icon/facebook.svg"
 import instagram from "../Images/Icon/instagram.svg"
@@ -10,6 +10,7 @@ import twitter from "../Images/Icon/twitter.svg"
 import dribbble from "../Images/Icon/dribbble.svg"
 import github from "../Images/Icon/github.svg"
 import email from "../Images/Icon/email.svg"
+import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
 
 const icon = [
   {
@@ -91,12 +92,25 @@ function Hero() {
         </h3>
         <Grid container justifyContent="center">
           {icon.map((item, index) => (
-              <div className="medsos" key={index}>
-                <a href={item.url} target="_blank" rel="noreferrer">
-                  <img src={item.icon} alt="profil" width="80%" />
-                </a>
-              </div>
+            <div className="medsos" key={index}>
+              <a href={item.url} target="_blank" rel="noreferrer">
+                <img src={item.icon} alt="profil" width="80%" />
+              </a>
+            </div>
           ))}
+        </Grid>
+
+        <Grid container justifyContent="center">
+          <div style={{margin: "3rem 0"}}>
+            <Button variant="outlined" style={{ border: "2px solid #23A036", borderRadius: "30px", fontFamily: "Nunito", color: "#23A036", padding: ".5rem 2rem", margin: "0 1rem", fontWeight: "600"}}> 
+              See my work
+            </Button>
+
+            <Button size="large" variant="contained" style={{ backgroundColor: "#23A036", borderRadius: "30px", fontFamily: "Nunito", color: "#ffff", padding: ".5rem 2rem", fontWeight: "600", margin: "0 1rem"}}> 
+              Hire Me   &nbsp;  <ArrowForwardIosRoundedIcon/>
+            </Button>
+
+          </div>
         </Grid>
       </Container>
     </React.Fragment>
