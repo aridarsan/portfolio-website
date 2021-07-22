@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
-import {Link, NavLink} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import Brand from './Brand';
 import Burgermenu from './Burgermenu';
 import CollapseMenu from './CollapseMenu';
@@ -25,7 +25,7 @@ const FlexContainer = styled.div`
   margin: auto;
   padding: 0 2rem;
   justify-content: space-between;
-  height: 5rem;
+  height: 4rem;
   box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
 `;
 
@@ -83,7 +83,7 @@ const Navbar = (props) => {
           <NavLinks style={linkAnimation}>
           <a href='/'></a>
             <NavLink exact to='/' activeClassName="active">Beranda</NavLink>
-            <Link to='/'>About Me</Link>
+            <a href='#about'>About Me</a>
             <NavLink to='/cara-pesan' activeClassName="active">Portfolio</NavLink>
             <NavLink to='/testimoni' activeClassName="active">
               <Button variant="contained" style={{ backgroundColor: "#23A036", borderRadius: "30px", fontFamily: "Nunito", color: "#ffff", padding: ".5rem 2rem"}}> Contact Me </Button>

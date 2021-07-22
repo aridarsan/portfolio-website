@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
 // import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 // import InstagramIcon from '@material-ui/icons/Instagram';
@@ -10,7 +10,7 @@ import { Button } from '@material-ui/core';
 const CollapseWrapper = styled(animated.div)`
   background: #FFCB2D;
   position: fixed;
-  top: 4.5rem;
+  top: 4rem;
   left: 0;
   right: 0;
   z-index: 1300;
@@ -78,11 +78,11 @@ const CollapseMenu = (props) => {
           </li>
           <Hr />
           <li>
-            <Link to='/' onClick={props.handleNavbar}>
+            <a href='#about' onClick={props.handleNavbar}>
               <div>
                 <p>About Me</p>
               </div>
-            </Link>
+            </a>
           </li>
           <Hr />
           <li>

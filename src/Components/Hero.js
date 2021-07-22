@@ -14,11 +14,11 @@ import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounde
 
 const icon = [
   {
-    url: "https://facebook.com/aridarsan",
+    url: "https://facebook.com/darsa.ari",
     icon: facebook
   },
   {
-    url: "https://facebook.com/ari_darsan",
+    url: "https://instagram.com/ari_darsan",
     icon: instagram
   },
   {
@@ -52,7 +52,7 @@ function Hero() {
         <Grid container justifyContent="center" style={{textAlign: "center"}}>
           <Grid item xs={12}>
             <h1 style={{color: "#ffffff"}}>
-              Hi, I&#39;m &#32; 
+              <span style={{color: "#646369"}}>Hi, I&#39;m &#32;</span> 
             <AutoTyping
               active // <boolean>
               textRef=' Ari Darsan' // <string>
@@ -88,7 +88,7 @@ function Hero() {
 
      <Container maxWidth='lg'>
         <h3 style={{textAlign: "center", marginBottom: "1rem"}}>
-          My Social Media
+          Social Media
         </h3>
         <Grid container justifyContent="center">
           {icon.map((item, index) => (
@@ -100,17 +100,19 @@ function Hero() {
           ))}
         </Grid>
 
-        <Grid container justifyContent="center">
-          <div style={{margin: "3rem 0"}}>
-            <Button variant="outlined" style={{ border: "2px solid #23A036", borderRadius: "30px", fontFamily: "Nunito", color: "#23A036", padding: ".5rem 2rem", margin: "0 1rem", fontWeight: "600"}}> 
+        <Grid container justifyContent="center" style={{margin: "2rem 0 0"}}>
+          <Grid item xs={12} lg={2} style={{margin: ".5rem 1rem"}}>
+            <Button size="large" variant="outlined" className="btn-second"> 
               See my work
             </Button>
+          </Grid>
 
-            <Button size="large" variant="contained" style={{ backgroundColor: "#23A036", borderRadius: "30px", fontFamily: "Nunito", color: "#ffff", padding: ".5rem 2rem", fontWeight: "600", margin: "0 1rem"}}> 
+          <Grid item xs={12} lg={2} style={{margin: ".5rem 1rem"}}>
+            <Button size="large" variant="contained" className="btn-primary"> 
               Hire Me   &nbsp;  <ArrowForwardIosRoundedIcon/>
             </Button>
+          </Grid>
 
-          </div>
         </Grid>
       </Container>
     </React.Fragment>
