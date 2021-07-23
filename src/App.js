@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Home from "./Pages/Home";
-import Navbar from "./Components/NavBar/Navbar"
-import GlobalStyles from "./Styles/Global"
-import NotFound from "./Components/NotFound"
+import Home from './Pages/Home';
+import Navbar from './Components/NavBar/Navbar';
+import GlobalStyles from './Styles/Global';
+import NotFound from './Components/NotFound';
+import Footer from './Components/Footer';
 
 function App() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -13,18 +14,20 @@ function App() {
   };
   return (
     <React.Fragment>
-      <Navbar navbarState={navbarOpen} handleNavbar={handleNavbar}/>
-      <GlobalStyles/>
+      <Navbar navbarState={navbarOpen} handleNavbar={handleNavbar} />
+      <GlobalStyles />
 
       <Switch>
         <Route exact path='/'>
-          <Home/>
+          <Home />
         </Route>
 
         <Route path='*'>
-          <NotFound/>
+          <NotFound />
         </Route>
       </Switch>
+
+      <Footer/>
     </React.Fragment>
   );
 }

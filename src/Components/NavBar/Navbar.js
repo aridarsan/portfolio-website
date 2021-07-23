@@ -2,21 +2,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
-import {NavLink} from "react-router-dom"
+import { NavLink } from 'react-router-dom';
 import Brand from './Brand';
 import Burgermenu from './Burgermenu';
 import CollapseMenu from './CollapseMenu';
-import { Button } from "@material-ui/core"
+import { Button } from '@material-ui/core';
 
 const NavBar = styled(animated.div)`
-position: fixed;
-width: 100%;
-top: 0;
-left: 0;
-background: #FFCB2D;
-z-index: 100;
-font-size: 1rem;
-box-shadow: 0 0 40px rgb(0 0 0 / 10%);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #ffcb2d;
+  z-index: 100;
+  font-size: 1rem;
+  box-shadow: 0 0 40px rgb(0 0 0 / 10%);
 `;
 
 const FlexContainer = styled.div`
@@ -81,12 +81,28 @@ const Navbar = (props) => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-          <a href='/'></a>
-            <NavLink exact to='/' activeClassName="active">Beranda</NavLink>
+            <a href='/'></a>
+            <NavLink exact to='/' activeClassName='active'>
+              Home
+            </NavLink>
             <a href='#about'>About Me</a>
-            <NavLink to='/cara-pesan' activeClassName="active">Portfolio</NavLink>
-            <NavLink to='/testimoni' activeClassName="active">
-              <Button variant="contained" style={{ backgroundColor: "#23A036", borderRadius: "30px", fontFamily: "Nunito", color: "#ffff", padding: ".5rem 2rem"}}> Contact Me </Button>
+            <a href='#portfolio'>
+              Portfolio
+            </a>
+            <NavLink to='/testimoni' activeClassName='active'>
+              <Button
+                variant='contained'
+                style={{
+                  backgroundColor: '#23A036',
+                  borderRadius: '30px',
+                  fontFamily: 'Nunito',
+                  color: '#ffff',
+                  padding: '.5rem 2rem',
+                }}
+              >
+                {' '}
+                Contact Me{' '}
+              </Button>
             </NavLink>
           </NavLinks>
           <BurgerWrapper>
@@ -94,7 +110,7 @@ const Navbar = (props) => {
               navbarState={props.navbarState}
               handleNavbar={props.handleNavbar}
             />
-          </BurgerWrapper> 
+          </BurgerWrapper>
         </FlexContainer>
       </NavBar>
       <CollapseMenu

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../../Images/logo.png';
-import {Link} from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 const Brand = () => {
   return (

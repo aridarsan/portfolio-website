@@ -14,7 +14,10 @@ const NotFound = () => {
     <React.Fragment>
       <Container maxWidth='lg'>
         <Grid container justify='center' style={{ marginTop: '6rem' }}>
-          <h4> Maaf halaman {location.pathname} tidak ditemukan atau dihapus</h4>
+          <h4>
+            {' '}
+            Maaf halaman {location.pathname} tidak ditemukan atau dihapus
+          </h4>
           <img src={NotFounds} alt='NotFound' width='80%' />
           <Button
             variant='contained'

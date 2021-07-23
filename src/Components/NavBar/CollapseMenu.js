@@ -8,7 +8,7 @@ import { useSpring, animated } from 'react-spring';
 import { Button } from '@material-ui/core';
 
 const CollapseWrapper = styled(animated.div)`
-  background: #FFCB2D;
+  background: #ffcb2d;
   position: fixed;
   top: 4rem;
   left: 0;
@@ -72,7 +72,7 @@ const CollapseMenu = (props) => {
               onClick={props.handleNavbar}
             >
               <div>
-                <p>Beranda</p>
+                <p>Home</p>
               </div>
             </NavLink>
           </li>
@@ -86,15 +86,14 @@ const CollapseMenu = (props) => {
           </li>
           <Hr />
           <li>
-            <NavLink
-              to='/cara-pesan'
-              activeClassName='active'
+            <a
+              href='#portfolio'
               onClick={props.handleNavbar}
             >
               <div>
                 <p>Portfolio</p>
               </div>
-            </NavLink>
+            </a>
           </li>
           <Hr />
           <li>
@@ -104,7 +103,20 @@ const CollapseMenu = (props) => {
               onClick={props.handleNavbar}
             >
               <div>
-                <Button variant="contained" style={{ backgroundColor: "#23A036", borderRadius: "30px", fontFamily: "Nunito", color: "#ffff", padding: ".5rem 2rem", margin: "1rem"}}> Contact Me </Button>
+                <Button
+                  variant='contained'
+                  style={{
+                    backgroundColor: '#23A036',
+                    borderRadius: '30px',
+                    fontFamily: 'Nunito',
+                    color: '#ffff',
+                    padding: '.5rem 2rem',
+                    margin: '1rem',
+                  }}
+                >
+                  {' '}
+                  Contact Me{' '}
+                </Button>
               </div>
             </NavLink>
           </li>
