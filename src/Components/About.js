@@ -67,7 +67,7 @@ const skillset = [
 
 const PrettoSlider = withStyles({
   root: {
-    color: '#23A036',
+    color: '#23a036',
     height: 10,
   },
   thumb: {
@@ -179,14 +179,18 @@ const About = () => {
 
           <Grid item lg={6} xs={12}>
             <Hidden mdDown>
-              <img src={about} alt='about' width='100%' />
+              <Grid container justifyContent='center'>
+                <img src={about} alt='about' width='80%' />
+              </Grid>
             </Hidden>
           </Grid>
         </Grid>
 
-        <Grid container spacing={4}>
-          <Grid item lg={6} xs={12}>
-            <img src={programming} alt='about' width='100%' />
+        <Grid container>
+          <Grid item lg={6} xs={12} style={{ padding: '0' }}>
+            <Grid container justifyContent='center'>
+              <img src={programming} alt='about' width='80%' />
+            </Grid>
           </Grid>
 
           <Grid item lg={6} xs={12}>

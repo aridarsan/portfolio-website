@@ -86,6 +86,9 @@ const Navbar = (props) => {
               Home
             </NavLink>
             <a href='#about'>About Me</a>
+            <a href='#services'>
+              Services
+            </a>
             <a href='#portfolio'>
               Portfolio
             </a>

@@ -14,7 +14,7 @@ import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounde
 
 const icon = [
   {
-    url: 'https://facebook.com/darsa.ari',
+    url: 'https://facebook.com/darsan.ari',
     icon: facebook,
   },
   {
@@ -26,7 +26,7 @@ const icon = [
     icon: whatsapp,
   },
   {
-    url: 'https://twitter.com/',
+    url: 'https://twitter.com/darsan_ari',
     icon: twitter,
   },
   {
@@ -39,6 +39,10 @@ const icon = [
   },
   {
     url: 'mailto:aridarsan09@gmail.com',
+    icon: email,
+  },
+  {
+    url: 'https://id.linkedin.com/aridarsan',
     icon: email,
   },
 ];
@@ -108,9 +112,11 @@ function Hero() {
           </Grid>
 
           <Grid item xs={12} md={5} lg={2} style={{ margin: '.5rem 1rem' }}>
+          <a href="#hire">
             <Button size='large' variant='contained' className='btn-primary'>
               Hire Me &nbsp; <ArrowForwardIosRoundedIcon />
             </Button>
+          </a>
           </Grid>
         </Grid>
       </Container>

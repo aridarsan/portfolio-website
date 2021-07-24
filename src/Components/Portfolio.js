@@ -98,7 +98,7 @@ const Porfolio = () => {
     setActiveUi(false);
     setActiveWeb(false);
     setActiveLogo(false);
-    console.log(myWork);
+    // console.log(myWork);
   }
 
   async function web() {
@@ -107,7 +107,7 @@ const Porfolio = () => {
     setActiveWeb(true);
     setActiveUi(false);
     setActiveLogo(false);
-    console.log(myWork);
+    // console.log(myWork);
   }
 
   async function ui() {
@@ -116,7 +116,7 @@ const Porfolio = () => {
     setActiveWeb(false);
     setActiveUi(true);
     setActiveLogo(false);
-    console.log(myWork);
+    // console.log(myWork);
   }
 
   async function logo() {
@@ -125,7 +125,7 @@ const Porfolio = () => {
     setActiveWeb(false);
     setActiveUi(false);
     setActiveLogo(true);
-    console.log(myWork);
+    // console.log(myWork);
   }
 
   useEffect(() => {
@@ -145,12 +145,12 @@ const Porfolio = () => {
         >
           <Grid item>
             <h2>
-              <span>My Work</span>
+              <span>Latest Work</span>
             </h2>
           </Grid>
         </Grid>
 
-        <Grid container justifyContent='center' spacing={2}>
+        <Grid container justifyContent='center' spacing={3}>
           <Grid item>
             <Button
               onClick={all}
@@ -224,12 +224,14 @@ const Porfolio = () => {
                     className='shadow'
                   >
                     <CardContent>
+                    <a href={item.img} target="_blank" rel="noreferrer">
                       <img
                         src={item.img}
                         alt='portfolio'
                         width='100%'
                         style={{ borderRadius: '10px' }}
                       />
+                    </a>
 
                       <h4 style={{ margin: '1rem 0' }}>{item.name}</h4>
 
