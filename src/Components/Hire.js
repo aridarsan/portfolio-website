@@ -7,19 +7,19 @@ const Hire = () => {
   const [name, setName] = React.useState('');
 	const [emails, setEmails] = React.useState("");
 	const [messages, setMessages] = React.useState("")
-  const [ isSubmitting, setIsSubmitting ] = React.useState(false)
+  // const [ isSubmitting, setIsSubmitting ] = React.useState(false)
 
-  const validation = () => {
-    if (name === "") {
-      return false;
-    } else if (emails === ""){
-      return false;
-    } else if (messages === ""){
-      return false;
-    } else{
-      setIsSubmitting(true)
-    }
-  }
+  // const validation = () => {
+  //   if (name === "") {
+  //     return false;
+  //   } else if (emails === ""){
+  //     return false;
+  //   } else if (messages === ""){
+  //     return false;
+  //   } else{
+  //     setIsSubmitting(true)
+  //   }
+  // }
 
   const form = document.forms['contact']
 
@@ -29,7 +29,7 @@ const Hire = () => {
 		message: messages
 	}
 
-	console.log(data)
+	console.log(data, form)
 
   return (
     <React.Fragment>
