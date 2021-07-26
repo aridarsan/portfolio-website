@@ -2,6 +2,39 @@ import React from 'react';
 import { Grid, Container, TextField, Button, Hidden } from '@material-ui/core';
 import email from '../Images/email.svg';
 import website from '../Images/website.svg';
+import whatsapp from '../Images/Icon/whatsapp.svg';
+import mail from '../Images/Icon/email.svg';
+import SendIcon from '@material-ui/icons/Send';
+import { withStyles } from '@material-ui/core/styles';
+
+const ValidationTextField = withStyles({
+  root: {
+    '& input:valid + fieldset': {
+      borderColor: '#23a036',
+      borderWidth: 2,
+    },
+    '& input:invalid + fieldset': {
+      borderColor: 'red',
+      borderWidth: 2,
+    },
+    '& input:valid:focus + fieldset': {
+      borderLeftWidth: 6,
+      padding: '4px !important'
+    },
+    '& textarea:valid:focus + fieldset': {
+      borderLeftWidth: 6,
+      padding: '4px !important'
+    },
+    '& textarea:valid + fieldset': {
+      borderColor: '#23a036',
+      borderWidth: 2,
+    },
+    '& textarea:invalid + fieldset': {
+      borderColor: 'red',
+      borderWidth: 2,
+    },
+  }
+})(TextField);
 
 const Hire = () => {
   const [name, setName] = React.useState('');
@@ -29,6 +62,16 @@ const Hire = () => {
 		message: messages
 	}
 
+  const wa = "https://wa.me/6281222288153?text="
+  const pesan1 = "Nama%20%3A%20" + encodeURIComponent(name);
+  // eslint-disable-next-line
+  const pesan2 = "%0A" + "Email%20%3A%20" + encodeURIComponent(emails);
+  // eslint-disable-next-line
+  const pesan3 = "%0A" + "Pesan%20%3A%20" + encodeURIComponent(messages);
+
+  const url = wa + pesan1 + pesan2 + pesan3
+  console.log(url)
+
 	console.log(data, form)
 
   return (
@@ -45,37 +88,9 @@ const Hire = () => {
             <h2>
               <span>Hire Me</span>
             </h2>
+
+            <hr className="line-tittle" />
           </Grid>
-        </Grid>
-
-        <Grid container spacing={4} justifyContent='center'>
-          <Grid
-            item
-            lg={6}
-            xs={12}
-            className='shadow'
-            style={{ padding: '2rem' }}
-          >
-            <h1>100% Satisfaction Guaranteed</h1>
-
-            <h4>What you can get?</h4>
-
-            <p>High quality project work</p>
-
-            <p>Good communication</p>
-
-            <p>Unlimited revision until you satisfied</p>
-
-            <p>Best price project</p>
-          </Grid>
-
-          <Hidden mdDown>
-            <Grid item lg={6} xs={12}>
-              <Grid container justifyContent='center'>
-                <img src={website} alt='hire' width='80%' />
-              </Grid>
-            </Grid>
-          </Hidden>
         </Grid>
 
         <Grid
@@ -90,53 +105,122 @@ const Hire = () => {
           </Grid>
 
           <Grid item lg={6} xs={12}>
-            <h3 style={{ margin: '2rem 0' }}>
+            <h3 style={{ marginTop: '1rem' }}>
               <span className='about-h3'> Get in Touch </span>
             </h3>
 
-            <form name="contact">
-            <TextField
-              id='produk'
-              label='Full name'
-              variant='outlined'
-              color='primary'
+            <hr className="line" />
+
+            <form name="contact" style={{marginTop: "2rem"}}>
+
+            <ValidationTextField
+              label='Fullname'
+              variant="outlined"
               className='inputan'
               onChange={(e) => setName(e.target.value)}
             />
 
-            <TextField
-              id='produk'
+            <ValidationTextField
               label='Email Address'
-              variant='outlined'
-              color='primary'
+              variant="outlined"
               className='inputan'
               onChange={(e) => setEmails(e.target.value)}
             />
 
-            <TextField
-              id='produk'
+            <ValidationTextField
               label='Messages'
-              multiline
-              rows={5}
-              variant='outlined'
-              color='primary'
+              variant="outlined"
               className='inputan'
               onChange={(e) => setMessages(e.target.value)}
+              multiline
+              rows={5}
             />
 
             <Grid container>
-              <Grid item xs={12} md={5} lg={2}>
+              <Grid item xs={12} md={5} lg={3}>
+              <a href={url} target="_blank" rel="noreferrer">
                 <Button
                   size='large'
                   variant='contained'
                   className='btn-primary'
                 >
-                  Submit
+                  Submit &nbsp;  <SendIcon/>
                 </Button>
+                </a>
               </Grid>
             </Grid>
 
             </form>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={4} justifyContent='center'>
+          <Grid
+            item
+            lg={6}
+            xs={12}
+            className='shadow'
+            style={{ padding: '2rem', margin: "2rem 0" }}
+          >
+            <h1>100% Satisfaction Guaranteed</h1>
+
+            <h4>What you can get?</h4>
+
+            <p>&bull; &nbsp; High quality project work</p>
+
+            <p>&bull; &nbsp;Good communication</p>
+
+            <p>&bull; &nbsp;Unlimited revision until you satisfied</p>
+
+            <p>&bull; &nbsp;Best price project</p>
+          </Grid>
+
+          <Hidden mdDown>
+            <Grid item lg={6} xs={12}>
+              <Grid container justifyContent='center'>
+                <img src={website} alt='hire' width='80%' />
+              </Grid>
+            </Grid>
+          </Hidden>
+        </Grid>
+
+        <Grid container justifyContent="center" style={{marginBottom: "2rem"}}>
+          <Grid item style={{ borderRadius: "50px", margin: "1rem" }} className="shadow hire">
+          <a href="mailto:aridarsan09@gmail.com" target="_blank" rel="noreferrer">
+            <Grid container alignItems="center">
+              <Grid item>
+                <div
+                  className='medsos-foot'
+                  style={{ height: '3rem', width: '3rem' }}
+                >
+                  <img src={mail} alt='profil' width='80%' />
+                </div>
+              </Grid>
+
+              <Grid item>
+                <h4 style={{margin: "0 2rem 0 1rem"}}>aridarsan09@gmail.com</h4>
+              </Grid>
+            </Grid>
+            </a>
+          </Grid>
+
+          <Grid item style={{ borderRadius: "50px", margin: "1rem" }} className="shadow hire">
+          <a href="https://wa.me/6281222288153" target="_blank" rel="noreferrer">
+            <Grid container alignItems="center">
+              <Grid item>
+                <div
+                  className='medsos-foot'
+                  style={{ height: '3rem', width: '3rem' }}
+                >
+                  <img src={whatsapp} alt='profil' width='80%' />
+                </div>
+              </Grid>
+
+              <Grid item>
+                <h4 style={{margin: "0 2rem 0 1rem"}}>081222288153</h4>
+              </Grid>
+            </Grid>
+            </a>
           </Grid>
         </Grid>
       </Container>

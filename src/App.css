@@ -1,28 +1,7 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 /*all page*/
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
   background-color: #fcfcfc;
 }
 
@@ -42,7 +21,7 @@ h6 {
 
 h5 a:hover {
   text-decoration: none !important;
-  color: (--primary);
+  color: var(--primary);
 }
 
 a {
@@ -50,8 +29,8 @@ a {
   color: #4f4f4f !important;
 }
 
-a:hover {
-  color: (--primary) !important;
+a:hover{
+  color: #ffff !important;
 }
 
 p span {
@@ -75,8 +54,12 @@ p span {
 
 .inputan {
   width: 100% !important;
-  border-radius: 0 !important;
   margin-bottom: 2rem !important;
+  font-family: "Nunito" !important;
+}
+
+input{
+  font-family: "Nunito" !important;
 }
 
 .heading3 {
@@ -156,6 +139,11 @@ p span {
   overflow: hidden;
 }
 
+.img-profil:hover{
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
 .setskill:hover {
   box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
   border-radius: 10px;
@@ -170,9 +158,17 @@ p span {
   padding: 8rem 0 16rem;
 }
 
+.wave2 {
+  background-image: url(./Images/wave2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+}
+
 .medsos {
   background-color: #ffff;
-  box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
+  box-shadow: none;
   border-radius: 100%;
   width: 3rem;
   height: 3rem;
@@ -187,19 +183,53 @@ p span {
 
 .medsos:hover {
   opacity: 1;
-  box-shadow: none;
+  box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
   margin-top: -0.5rem;
   transition: 1s ease;
+  transform: scale(1.1);
 }
+
+.medsos-foot{
+  background-color: #ffff;
+  box-shadow: none;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem;
+  border: 1px solid var(--secondary);
+  opacity: 0.5;
+}
+
+.medsos-foot:hover{
+  opacity: 1;
+}
+
+.medsos-foot img {
+  margin: 0.3rem;
+}
+
+.hire:hover .medsos-foot{
+  opacity: 1;
+}
+
 
 .shadow {
   box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
+  border: 1px solid ;
   border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0.23)
+}
+
+.shadow:hover {
+  box-shadow: none;
+  border: 1px solid var(--primary);
+  transition: 1s ease;
 }
 
 .about:hover {
   box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
   border-radius: 10px;
+  transition: 1s ease;
 }
 
 .about:hover .medsos{
@@ -208,13 +238,28 @@ p span {
   transition: 1s ease;
 }
 
+
 .about-h3::before {
   content: '';
   position: relative;
   left: 0;
   bottom: 50%;
-  border-left: 0.25rem solid var(--primary);
-  margin-right: 1rem;
+  margin-right: 4rem;
+}
+
+.line{
+  width: 3rem !important;
+  height: .25rem !important;
+  background-color: var(--primary) !important;
+  margin-top: -1.5rem !important;
+  border-radius: 1rem;
+}
+
+.line-tittle{
+  width: 3rem !important;
+  height: .25rem !important;
+  background-color: var(--primary) !important;
+  margin: auto;
 }
 
 .skill {
@@ -244,6 +289,29 @@ p span {
   margin: auto 1rem !important;
   color: #646369;
 }
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  left: 10;
+  background: rgba(255, 255, 255);
+  color: #f1f1f1; 
+  width: 33%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000;
+  border-radius: .5rem;
+  border: 2px solid var(--primary);
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
 
 /*Mobile*/
 @media (max-width: 600px) {

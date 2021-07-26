@@ -18,7 +18,7 @@ const who = [
   {
     img: user,
     name: 'Profile',
-    desc: 'I am always want to learn new things and always honest and responsible.',
+    desc: 'I am always want to learn new things, honest and responsible.',
   },
   {
     img: location,
@@ -110,6 +110,7 @@ const About = () => {
             <h2>
               <span>About Me</span>
             </h2>
+            <hr className="line-tittle" />
           </Grid>
         </Grid>
 
@@ -118,6 +119,8 @@ const About = () => {
             <h3 style={{ marginTop: '1rem' }}>
               <span className='about-h3'>WHO AM I</span>
             </h3>
+
+            <hr className="line" />
 
             <h5
               style={{
@@ -131,7 +134,7 @@ const About = () => {
               <span style={{ color: '#FFCB2D', fontWeight: '600' }}>
                 Web Development
               </span>
-              , especially using React JS, wich is libarary developed by
+              , especially using React JS, wich is library developed by
               Facebook and also has the skill in the field of graphic design,
               especially in the field of{' '}
               <span style={{ color: '#FFCB2D', fontWeight: '600' }}>
@@ -194,11 +197,13 @@ const About = () => {
           </Grid>
 
           <Grid item lg={6} xs={12}>
-            <h3 style={{ margin: '1rem 0' }}>
+            <h3 style={{ marginTop: '1rem 0' }}>
               <span className='about-h3'>SKILL SET</span>
             </h3>
 
-            <Grid container spacing={2} justifyContent='center'>
+          <hr className="line" />
+
+            <Grid container spacing={2} justifyContent='center' style={{marginTop: "1rem"}}>
               {skillset.map((item, index) => (
                 <Grid item lg={6} xs={6} key={index} className='setskill'>
                   <div className='skill' style={{ margin: '1rem 0' }}>

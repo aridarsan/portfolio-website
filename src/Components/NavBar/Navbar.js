@@ -82,7 +82,7 @@ const Navbar = (props) => {
           <Brand />
           <NavLinks style={linkAnimation}>
             <a href='/'></a>
-            <NavLink exact to='/' activeClassName='active'>
+            <NavLink to='/' activeClassName='active'>
               Home
             </NavLink>
             <a href='#about'>About Me</a>
@@ -92,7 +92,7 @@ const Navbar = (props) => {
             <a href='#portfolio'>
               Portfolio
             </a>
-            <NavLink to='/testimoni' activeClassName='active'>
+            <a href="#hire">
               <Button
                 variant='contained'
                 style={{
@@ -106,7 +106,7 @@ const Navbar = (props) => {
                 {' '}
                 Contact Me{' '}
               </Button>
-            </NavLink>
+            </a>
           </NavLinks>
           <BurgerWrapper>
             <Burgermenu

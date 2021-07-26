@@ -37,6 +37,8 @@ const Services = () => {
             <h2>
               <span>Services</span>
             </h2>
+
+          <hr className="line-tittle" />
           </Grid>
         </Grid>
 

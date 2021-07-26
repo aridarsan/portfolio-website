@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
-import { Grid, Container, Button, Card, CardContent } from '@material-ui/core';
+import { Grid, Container, Button } from '@material-ui/core';
 import Carousel from 'react-grid-carousel';
 import kickin from '../Images/landing page.png';
+// import CodeIcon from '@material-ui/icons/Code';
+// import LaptopIcon from '@material-ui/icons/Laptop';
 
 const content = [
   {
     img: kickin,
     name: 'Kickin',
-    desc: 'Sebuah website untuk memudahkan pengguna dalam membooking lapangan futsal secara online',
+    desc: 'Sebuah website yang ditujukan untuk memudahkan pengguna dalam membooking lapangan futsal secara online',
     url: 'https://kickin.netlify.app/',
     cat: 'web',
   },
@@ -147,6 +149,8 @@ const Porfolio = () => {
             <h2>
               <span>Latest Work</span>
             </h2>
+
+          <hr className="line-tittle" />
           </Grid>
         </Grid>
 
@@ -200,6 +204,7 @@ const Porfolio = () => {
           container
           justifyContent='center'
           alignItems='center'
+          direction="row"
           style={{ margin: '2rem 0' }}
         >
           <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -215,24 +220,15 @@ const Porfolio = () => {
             >
               {myWork.map((item, index) => (
                 <Carousel.Item key={index}>
-                  <Card
-                    style={{
-                      borderRadius: '10px',
-                      border: '2px solid #23A036',
-                      margin: 'auto',
-                    }}
-                    className='shadow'
-                  >
-                    <CardContent>
-                    <a href={item.img} target="_blank" rel="noreferrer">
                       <img
                         src={item.img}
                         alt='portfolio'
                         width='100%'
-                        style={{ borderRadius: '10px' }}
+                        style={{ borderRadius: '.5rem' }}
+                        className="port"
                       />
-                    </a>
 
+                      <div className="overlay">
                       <h4 style={{ margin: '1rem 0' }}>{item.name}</h4>
 
                       <p style={{ color: '#646369' }}>{item.desc}</p>
@@ -258,8 +254,9 @@ const Porfolio = () => {
                           </Button>
                         </Grid>
                       </Grid>
-                    </CardContent>
-                  </Card>
+
+                      </div>
+
                 </Carousel.Item>
               ))}
             </Carousel>

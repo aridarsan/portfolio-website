@@ -108,9 +108,7 @@ const CollapseMenu = (props) => {
           </li>
           <Hr />
           <li>
-            <NavLink
-              to='/testimoni'
-              activeClassName='active'
+            <a href="#hire"
               onClick={props.handleNavbar}
             >
               <div>
@@ -129,7 +127,7 @@ const CollapseMenu = (props) => {
                   Contact Me{' '}
                 </Button>
               </div>
-            </NavLink>
+            </a>
           </li>
         </NavLinks>
       </CollapseWrapper>

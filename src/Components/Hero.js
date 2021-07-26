@@ -63,8 +63,8 @@ function Hero() {
                 <AutoTyping
                   active // <boolean>
                   textRef=' Ari Darsan' // <string>
-                  writeSpeed={150} // <number>
-                  deleteSpeed={150} // <number>
+                  writespeed={150} // <number>
+                  deletespeed={150} // <number>
                   delayToWrite={1000} // <number>
                   delayToDelete={2000} // <number>
                 />
@@ -93,7 +93,9 @@ function Hero() {
       <Container maxWidth='lg'>
         <h3 style={{ textAlign: 'center', marginBottom: '1rem' }}>
           Social Media
+        <hr className="line-tittle" />
         </h3>
+
         <Grid container justifyContent='center'>
           {icon.map((item, index) => (
             <div className='medsos' key={index}>
@@ -106,9 +108,11 @@ function Hero() {
 
         <Grid container justifyContent='center' style={{ margin: '2rem 0 0' }}>
           <Grid item xs={12} md={5} lg={2} style={{ margin: '.5rem 1rem' }}>
+          <a href="#portfolio">
             <Button size='large' variant='outlined' className='btn-second'>
               See my work
             </Button>
+            </a>
           </Grid>
 
           <Grid item xs={12} md={5} lg={2} style={{ margin: '.5rem 1rem' }}>

@@ -13,7 +13,7 @@ const NotFound = () => {
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
-        <Grid container justify='center' style={{ marginTop: '6rem' }}>
+        <Grid container justifyContent='center' style={{ margin: '6rem 0' }}>
           <h4>
             {' '}
             Maaf halaman {location.pathname} tidak ditemukan atau dihapus
