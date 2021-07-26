@@ -10,6 +10,7 @@ import twitter from '../Images/Icon/twitter.svg';
 import dribbble from '../Images/Icon/dribbble.svg';
 import github from '../Images/Icon/github.svg';
 import email from '../Images/Icon/email.svg';
+import linkedin from '../Images/Icon/linkedin.svg';
 import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
 
 const icon = [
@@ -43,7 +44,7 @@ const icon = [
   },
   {
     url: 'https://id.linkedin.com/aridarsan',
-    icon: email,
+    icon: linkedin,
   },
 ];
 

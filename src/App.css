@@ -292,24 +292,75 @@ input{
 
 .overlay {
   position: absolute; 
-  bottom: 0; 
-  left: 10;
-  background: rgba(255, 255, 255);
-  color: #f1f1f1; 
-  width: 33%;
-  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100% !important;
+  height: 0;
   transition: .5s ease;
+  background: rgba(255, 255, 255, 0.9);
+  color: #f1f1f1; 
   opacity:0;
   font-size: 1rem;
   padding: 1rem;
-  text-align: center;
-  z-index: 1000;
+  z-index: 99;
   border-radius: .5rem;
   border: 2px solid var(--primary);
+  align-items: center;
+  margin: auto;
 }
 
-.overlay:hover{
+.port{
+  display: block;
+  transition: .5s ease-in;
+}
+
+.cont{
+  position: relative;
+  width: 100%;
+  padding: .25rem !important;
+}
+
+.cont:hover .overlay{
   opacity: 1;
+  height: 80%;
+}
+
+.category {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  transition: .5s ease;
+  color: #f1f1f1; 
+  opacity:1;
+  padding: 1rem;
+  z-index: 99;
+  border-radius: .5rem;
+  margin-left: auto;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.cont:hover .category{
+  opacity: 0;
+}
+
+.porto {
+  background-color: #ffff;
+  box-shadow: none;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  border: 1px solid var(--secondary);
+  opacity: 0.5;
+}
+
+.porto img {
+  margin: 0.3rem;
 }
 
 
