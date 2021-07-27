@@ -1,75 +1,84 @@
 import React, { useEffect } from 'react';
 import { Grid, Container, Button } from '@material-ui/core';
 // import kickin from '../Images/landing page.png';
-import japri from '../Images/Japri.png';
-import portoWeb from '../Images/Portfolio.png';
-import thesis from '../Images/Thesis Presentation.png';
+import japri from '../Images/portfolio/Japri.png';
+import portoWeb from '../Images/portfolio/Portfolio.png';
+import thesis from '../Images/portfolio/Thesis.png';
+import kickin from '../Images/portfolio/Kickin.png';
+import japriApp from '../Images/portfolio/Japri app.png';
+import ayongetrip from '../Images/portfolio/ayongetrip.png';
+import CDU from '../Images/portfolio/CDU.png';
+import kebumen from '../Images/portfolio/kebumen.png';
+import Login from '../Images/portfolio/Login.png';
+// import semipro from '../Images/portfolio/semipro.png';
+// import tujuhsembilan from '../Images/portfolio/tujuhsembilan.png';
+
 import reacts from '../Images/Icon/react.svg';
 import laptop from '../Images/Icon/laptop.svg';
 import illustration from '../Images/Icon/illustration.svg';
 
 const content = [
   {
-    img: japri,
+    img: kickin,
     name: 'Kickin',
     desc: 'A website that is intended to make it easier for futsal lovers to book futsal fields online',
     url: 'https://kickin.netlify.app/',
-    cat: 'web, ui',
+    cat: 'web',
   },
   {
     img: thesis,
     name: 'Thesis Presentation',
-    desc: 'This website is used for presentations of research that I did to qualify for a bachelor&#39;s degree in public health',
-    url: 'https://kickin.netlify.app/',
+    desc: "This website is used for presentations of research that I did to qualify for a bachelor's degree in public health",
+    url: 'https://aridarsan.me/',
     cat: 'web, ui',
   },
   {
     img: japri,
     name: 'Japri Corp',
     desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs',
-    url: 'https://kickin.netlify.app/',
+    url: 'https://japricorp.netlify.app/',
     cat: 'web, ui',
   },
   {
-    img: thesis,
-    name: 'Thesis Presentation',
-    desc: 'This website is used for presentations of research that I did to qualify for a bachelor&#39;s degree in public health',
-    url: 'https://kickin.netlify.app/',
-    cat: 'ui',
+    img: portoWeb,
+    name: 'Website Portfolio',
+    desc: 'Portfolio website is used to introduce yourself and your skills as a means of personal branding and offering services',
+    url: 'https://aridarsan.xyz/',
+    cat: 'web, ui',
   },
   {
-    img: japri,
+    img: japriApp,
     name: 'Japri Corp Mobile App',
     desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs',
-    url: 'https://kickin.netlify.app/',
+    url: 'https://bit.ly/japri-app-deck',
     cat: 'ui',
   },
   {
-    img: portoWeb,
-    name: 'Portfolio Website',
-    desc: 'This website is used as a tool to present abilities with various projects that have been done',
-    url: 'https://kickin.netlify.app/',
-    cat: 'ui',
-  },
-  {
-    img: portoWeb,
-    name: 'Portfolio Website',
-    desc: 'This website is used as a tool to present abilities with various projects that have been done',
-    url: 'https://kickin.netlify.app/',
+    img: Login,
+    name: 'Logo Kreator Logo Indonesia',
+    desc: 'Login is a logo creator community that was formed to be a place for designers to discuss and develop themselves',
+    url: 'https://www.instagram.com/p/B_ww9wjnvHz/?utm_source=ig_web_copy_link',
     cat: 'logo',
   },
   {
-    img: portoWeb,
-    name: 'Portfolio Website',
-    desc: 'This website is used as a tool to present abilities with various projects that have been done',
-    url: 'https://kickin.netlify.app/',
+    img: ayongetrip,
+    name: 'Logo Ayongetrip',
+    desc: 'Ayongetrip is a company that was built to accompany the journey of people who like to travel to tourist attractions',
+    url: 'https://www.instagram.com/p/CBXKpHYBlmF/?utm_source=ig_web_copy_link',
     cat: 'logo',
   },
   {
-    img: portoWeb,
-    name: 'Portfolio Website',
-    desc: 'This website is used as a tool to present abilities with various projects that have been done',
-    url: 'https://kickin.netlify.app/',
+    img: kebumen,
+    name: 'Logo Kebumen Corner',
+    desc: 'Kebumen Corner is one of the social media platforms that provides interesting content',
+    url: 'https://www.instagram.com/p/CAXZQC2nfZ7/?utm_source=ig_web_copy_link',
+    cat: 'logo',
+  },
+  {
+    img: CDU,
+    name: 'Logo CDU Lab',
+    desc: 'Cito Diagnostika Utama rebranding which aims to rejuvenate the face of the company in the environmental field',
+    url: 'https://www.instagram.com/p/B9MTpyEhv3c/?utm_source=ig_web_copy_link',
     cat: 'logo',
   },
 ];
@@ -223,7 +232,8 @@ const Porfolio = () => {
               src={item.img}
               alt='portfolio'
               width='100%'
-              style={{ borderRadius: '.5rem' }}
+              style={{ borderRadius: '.5rem'}}
+              className="shadow"
             />
 
             <div className="category">
@@ -247,24 +257,28 @@ const Porfolio = () => {
 
                 <Grid container spacing={2}>
                   <Grid item xs={12} lg={6}>
-                    <Button
-                      size='medium'
-                      variant='contained'
-                      className='btn-primary'
-                    >
-                      View Detail
-                    </Button>
+                    <a href={item.url !== "" ? item.url : "#"} target="_blank" rel="noreferrer">
+                      <Button
+                        size='medium'
+                        variant='contained'
+                        className='btn-primary'
+                      >
+                        {item.cat === "logo" || item.cat === "ui" ? "View Detail" : "Visit"}
+                      </Button>
+                    </a>
                   </Grid>
 
                   <Grid item xs={12} lg={6}>
+                  <a href="#hire">
                     <Button
                       size='medium'
                       variant='outlined'
                       className='btn-second'
                       style={{backgroundColor: "#ffff"}}
                     >
-                      Visit
+                      I want too
                     </Button>
+                  </a>
                   </Grid>
                 </Grid>
               </div>

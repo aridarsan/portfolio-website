@@ -108,6 +108,7 @@ input{
   margin-top: '2rem' !important;
   width: 100%;
   box-shadow: 0px 10px 18px var(--primary);
+/*  box-shadow: 0px 10px 30px 0px #23A036;*/
 }
 
 .btn-primary:hover {

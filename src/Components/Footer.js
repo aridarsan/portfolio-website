@@ -9,7 +9,7 @@ const Footer = () => {
 				<Grid container justifyContent="center" style={{textAlign: "center"}}>
 					<Grid item>
 						<h4 style={{color: "#4f4f4f"}}>
-							Build With Pride and Big Effort
+							Build With ❤ Pride and Big Effort
 						</h4>
 
 						<h5 style={{color: "#ffff"}}>

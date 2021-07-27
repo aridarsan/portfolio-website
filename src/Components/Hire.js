@@ -13,6 +13,9 @@ const ValidationTextField = withStyles({
       borderColor: '#23a036',
       borderWidth: 2,
     },
+    '& input': {
+      maxLength: 4
+    },
     '& input:invalid + fieldset': {
       borderColor: 'red',
       borderWidth: 2,
@@ -38,14 +41,14 @@ const ValidationTextField = withStyles({
 
 const Hire = () => {
   const [name, setName] = React.useState('');
-	const [emails, setEmails] = React.useState("");
+	const [order, setOrder] = React.useState("");
 	const [messages, setMessages] = React.useState("")
   // const [ isSubmitting, setIsSubmitting ] = React.useState(false)
 
   // const validation = () => {
   //   if (name === "") {
   //     return false;
-  //   } else if (emails === ""){
+  //   } else if (order === ""){
   //     return false;
   //   } else if (messages === ""){
   //     return false;
@@ -54,25 +57,15 @@ const Hire = () => {
   //   }
   // }
 
-  const form = document.forms['contact']
-
-	const data ={
-		name: name,
-		email: emails,
-		message: messages
-	}
-
   const wa = "https://wa.me/6281222288153?text="
-  const pesan1 = "Nama%20%3A%20" + encodeURIComponent(name);
+  const pesan1 = "Name%20%3A%20" + encodeURIComponent(name);
   // eslint-disable-next-line
-  const pesan2 = "%0A" + "Email%20%3A%20" + encodeURIComponent(emails);
+  const pesan2 = "%0A" + "Order%20%3A%20" + encodeURIComponent(order);
   // eslint-disable-next-line
-  const pesan3 = "%0A" + "Pesan%20%3A%20" + encodeURIComponent(messages);
+  const pesan3 = "%0A" + "Messages%20%3A%20" + encodeURIComponent(messages);
 
   const url = wa + pesan1 + pesan2 + pesan3
-  console.log(url)
-
-	console.log(data, form)
+  // console.log(name.length)
 
   return (
     <React.Fragment>
@@ -118,13 +111,14 @@ const Hire = () => {
               variant="outlined"
               className='inputan'
               onChange={(e) => setName(e.target.value)}
+              maxLength="2"
             />
 
             <ValidationTextField
-              label='Email Address'
+              label='What you want'
               variant="outlined"
               className='inputan'
-              onChange={(e) => setEmails(e.target.value)}
+              onChange={(e) => setOrder(e.target.value)}
             />
 
             <ValidationTextField
