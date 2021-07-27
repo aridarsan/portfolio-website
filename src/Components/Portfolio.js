@@ -22,7 +22,7 @@ const content = [
     img: kickin,
     name: 'Kickin',
     desc: 'A website that is intended to make it easier for futsal lovers to book futsal fields online',
-    url: 'https://kickin.netlify.app/',
+    url: 'https://kickin-site.netlify.app/',
     cat: 'web',
   },
   {
