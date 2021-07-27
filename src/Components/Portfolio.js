@@ -12,63 +12,63 @@ const content = [
   {
     img: japri,
     name: 'Kickin',
-    desc: 'Sebuah website yang ditujukan untuk memudahkan pengguna dalam membooking lapangan futsal secara online',
+    desc: 'A website that is intended to make it easier for futsal lovers to book futsal fields online',
     url: 'https://kickin.netlify.app/',
     cat: 'web, ui',
   },
   {
     img: thesis,
     name: 'Thesis Presentation',
-    desc: 'Ini merupakan website persentasi Hubungan pengetahuan dan sikap terhadap perilaku adaptasi kebiasaan baru',
+    desc: 'This website is used for presentations of research that I did to qualify for a bachelor&#39;s degree in public health',
     url: 'https://kickin.netlify.app/',
     cat: 'web, ui',
   },
   {
     img: japri,
     name: 'Japri Corp',
-    desc: 'Sebuah start up platform multifungsi yang ingin maenjadi solusi bagi mahasiswa dalam pemenuhan kebutuhannya',
+    desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs',
     url: 'https://kickin.netlify.app/',
     cat: 'web, ui',
   },
   {
     img: thesis,
     name: 'Thesis Presentation',
-    desc: 'Ini merupakan website persentasi Hubungan pengetahuan dan sikap terhadap perilaku adaptasi kebiasaan baru',
+    desc: 'This website is used for presentations of research that I did to qualify for a bachelor&#39;s degree in public health',
     url: 'https://kickin.netlify.app/',
     cat: 'ui',
   },
   {
     img: japri,
     name: 'Japri Corp Mobile App',
-    desc: 'Sebuah start up platform multifungsi yang ingin maenjadi solusi bagi mahasiswa dalam pemenuhan kebutuhannya',
+    desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs',
     url: 'https://kickin.netlify.app/',
     cat: 'ui',
   },
   {
     img: portoWeb,
     name: 'Portfolio Website',
-    desc: 'Website ini digunakan sebagai alat mempresentasikan diri dengan berbagai project yang sudah dikerjakan',
+    desc: 'This website is used as a tool to present abilities with various projects that have been done',
     url: 'https://kickin.netlify.app/',
     cat: 'ui',
   },
-    {
+  {
     img: portoWeb,
     name: 'Portfolio Website',
-    desc: 'Website ini digunakan sebagai alat mempresentasikan diri dengan berbagai project yang sudah dikerjakan',
+    desc: 'This website is used as a tool to present abilities with various projects that have been done',
     url: 'https://kickin.netlify.app/',
     cat: 'logo',
   },
-    {
+  {
     img: portoWeb,
     name: 'Portfolio Website',
-    desc: 'Website ini digunakan sebagai alat mempresentasikan diri dengan berbagai project yang sudah dikerjakan',
+    desc: 'This website is used as a tool to present abilities with various projects that have been done',
     url: 'https://kickin.netlify.app/',
     cat: 'logo',
   },
-    {
+  {
     img: portoWeb,
     name: 'Portfolio Website',
-    desc: 'Website ini digunakan sebagai alat mempresentasikan diri dengan berbagai project yang sudah dikerjakan',
+    desc: 'This website is used as a tool to present abilities with various projects that have been done',
     url: 'https://kickin.netlify.app/',
     cat: 'logo',
   },
@@ -241,9 +241,9 @@ const Porfolio = () => {
             </div>
 
               <div className="overlay">
-                <h4 style={{ margin: '1rem 0' }}>{item.name}</h4>
+                <h4 style={{ margin: '4rem 0 1rem 0', color: '#ffff' }}>{item.name}</h4>
 
-                <p style={{ color: '#646369' }}>{item.desc}</p>
+                <p style={{ color: '#ffff', marginBottom: "2rem" }}>{item.desc}</p>
 
                 <Grid container spacing={2}>
                   <Grid item xs={12} lg={6}>
@@ -261,14 +261,15 @@ const Porfolio = () => {
                       size='medium'
                       variant='outlined'
                       className='btn-second'
+                      style={{backgroundColor: "#ffff"}}
                     >
                       Visit
                     </Button>
                   </Grid>
                 </Grid>
               </div>
-          </Grid>
-              ))}
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </React.Fragment>

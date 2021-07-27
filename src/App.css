@@ -299,16 +299,17 @@ input{
   width: 100% !important;
   height: 0;
   transition: .5s ease;
-  background: rgba(255, 255, 255, 0.9);
+/*  background: rgba(255, 255, 255, 0.9);*/
+  background-image: linear-gradient(to top, rgba(255, 203, 45, 1), rgba(35, 160, 54, 0.4));
   color: #f1f1f1; 
   opacity:0;
   font-size: 1rem;
   padding: 1rem;
   z-index: 99;
   border-radius: .5rem;
-  border: 2px solid var(--primary);
+/*  border: 2px solid var(--primary);*/
   align-items: center;
-  margin: auto;
+  margin-bottom: .5rem;
 }
 
 .port{
@@ -324,7 +325,7 @@ input{
 
 .cont:hover .overlay{
   opacity: 1;
-  height: 80%;
+  height: 100%;
 }
 
 .category {
@@ -357,6 +358,7 @@ input{
   margin: 0.5rem;
   border: 1px solid var(--secondary);
   opacity: 0.5;
+  box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.3);
 }
 
 .porto img {
