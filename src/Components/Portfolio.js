@@ -3,7 +3,7 @@ import { Grid, Container, Button } from '@material-ui/core';
 // import kickin from '../Images/landing page.png';
 import japri from '../Images/Japri.png';
 import portoWeb from '../Images/Portfolio.png';
-import thesis from '../Images/Thesis.png';
+import thesis from '../Images/Thesis Presentation.png';
 import reacts from '../Images/Icon/react.svg';
 import laptop from '../Images/Icon/laptop.svg';
 import illustration from '../Images/Icon/illustration.svg';
