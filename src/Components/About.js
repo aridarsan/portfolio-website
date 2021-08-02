@@ -163,7 +163,7 @@ const About = () => {
 
             <Grid container style={{ margin: '2rem 0' }}>
               <Grid item lg={4} md={6} xs={12} style={{ margin: '.5rem 1rem' }}>
-                <a href="#hire" alt="cv" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1Grd5h9Vje4LV-Jhm66L724SYjhHuFVOh/view?usp=sharing" alt="cv" target="_blank" rel="noreferrer">
                   <Button
                     size='large'
                     variant='contained'
