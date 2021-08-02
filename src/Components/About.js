@@ -163,19 +163,16 @@ const About = () => {
 
             <Grid container style={{ margin: '2rem 0' }}>
               <Grid item lg={4} md={6} xs={12} style={{ margin: '.5rem 1rem' }}>
-                <Button
-                  size='large'
-                  variant='contained'
-                  color='primary'
-                  style={{
-                    borderRadius: '30px',
-                    backgroundColor: '#23A036',
-                    fontFamily: 'Nunito',
-                    width: '100%',
-                  }}
-                >
-                  Download CV
-                </Button>
+                <a href="#hire" alt="cv" target="_blank" rel="noreferrer">
+                  <Button
+                    size='large'
+                    variant='contained'
+                    color='primary'
+                    className="btn btn-primary"
+                  >
+                    Download CV
+                  </Button>
+                  </a>
               </Grid>
             </Grid>
           </Grid>

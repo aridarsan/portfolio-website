@@ -43,19 +43,6 @@ const Hire = () => {
   const [name, setName] = React.useState('');
 	const [order, setOrder] = React.useState("");
 	const [messages, setMessages] = React.useState("")
-  // const [ isSubmitting, setIsSubmitting ] = React.useState(false)
-
-  // const validation = () => {
-  //   if (name === "") {
-  //     return false;
-  //   } else if (order === ""){
-  //     return false;
-  //   } else if (messages === ""){
-  //     return false;
-  //   } else{
-  //     setIsSubmitting(true)
-  //   }
-  // }
 
   const wa = "https://wa.me/6281222288153?text="
   const pesan1 = "Name%20%3A%20" + encodeURIComponent(name);
@@ -136,7 +123,7 @@ const Hire = () => {
                 <Button
                   size='large'
                   variant='contained'
-                  className='btn-primary'
+                  className='btn btn-primary'
                 >
                   Submit &nbsp;  <SendIcon/>
                 </Button>

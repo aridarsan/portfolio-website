@@ -21,7 +21,7 @@ const content = [
   {
     img: kickin,
     name: 'Kickin',
-    desc: 'A website that is intended to make it easier for futsal lovers to book futsal fields online',
+    desc: 'A website that is intended to make it easier for futsal lovers to book futsal fields online, without come to field before',
     url: 'https://kickin-site.netlify.app/',
     cat: 'web',
   },
@@ -35,8 +35,8 @@ const content = [
   {
     img: japri,
     name: 'Japri Corp',
-    desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs',
-    url: 'https://japricorp.netlify.app/',
+    desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs, and have noble purpose to empowerment',
+    url: 'https://japricorp.com/',
     cat: 'web, ui',
   },
   {
@@ -49,7 +49,7 @@ const content = [
   {
     img: japriApp,
     name: 'Japri Corp Mobile App',
-    desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs',
+    desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs, and have noble purpose to empowerment',
     url: 'https://bit.ly/japri-app-deck',
     cat: 'ui',
   },
@@ -70,7 +70,7 @@ const content = [
   {
     img: kebumen,
     name: 'Logo Kebumen Corner',
-    desc: 'Kebumen Corner is one of the social media platforms that provides interesting content',
+    desc: 'Kebumen Corner is one of the social media platforms that provides interesting content, especially on instagram',
     url: 'https://www.instagram.com/p/CAXZQC2nfZ7/?utm_source=ig_web_copy_link',
     cat: 'logo',
   },
@@ -179,7 +179,7 @@ const Porfolio = () => {
               onClick={all}
               size='large'
               variant={activeAll === true ? 'contained' : 'outlined'}
-              className={activeAll === true ? 'btn-primary' : 'btn-second'}
+              className={activeAll === true ? 'btn btn-primary' : 'btn btn-second'}
             >
               All
             </Button>
@@ -190,7 +190,7 @@ const Porfolio = () => {
               onClick={web}
               size='large'
               variant={activeWeb === true ? 'contained' : 'outlined'}
-              className={activeWeb === true ? 'btn-primary' : 'btn-second'}
+              className={activeWeb === true ? 'btn btn-primary' : 'btn btn-second'}
             >
               Web Development
             </Button>
@@ -201,7 +201,7 @@ const Porfolio = () => {
               onClick={ui}
               size='large'
               variant={activeUi === true ? 'contained' : 'outlined'}
-              className={activeUi === true ? 'btn-primary' : 'btn-second'}
+              className={activeUi === true ? 'btn btn-primary' : 'btn btn-second'}
             >
               UI/UX Design
             </Button>
@@ -212,7 +212,7 @@ const Porfolio = () => {
               onClick={logo}
               size='large'
               variant={activeLogo === true ? 'contained' : 'outlined'}
-              className={activeLogo === true ? 'btn-primary' : 'btn-second'}
+              className={activeLogo === true ? 'btn btn-primary' : 'btn btn-second'}
             >
               Logo Design
             </Button>
@@ -261,7 +261,7 @@ const Porfolio = () => {
                       <Button
                         size='medium'
                         variant='contained'
-                        className='btn-primary'
+                        className='btn btn-primary'
                       >
                         {item.cat === "logo" || item.cat === "ui" ? "View Detail" : "Visit"}
                       </Button>
@@ -273,10 +273,10 @@ const Porfolio = () => {
                     <Button
                       size='medium'
                       variant='outlined'
-                      className='btn-second'
+                      className='btn btn-second'
                       style={{backgroundColor: "#ffff"}}
                     >
-                      I want too
+                      contact me
                     </Button>
                   </a>
                   </Grid>

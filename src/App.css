@@ -62,41 +62,20 @@ input{
   font-family: "Nunito" !important;
 }
 
-.heading3 {
-  margin: 3rem 0 2rem 0 !important;
-  font-weight: 700 !important;
-  font-family: Montserrat !important;
-  color: #0895ca !important;
-  text-align: center !important;
+input:focus{
+  font-family: "Nunito" !important;
 }
 
-.pjudul {
-  font-family: Montserrat;
-  color: #4f4f4f;
-  text-align: center;
-  margin-bottom: 2rem;
+input:hover{
+  font-family: "Nunito" !important;
 }
 
-.footer-div:hover {
-  opacity: 0.8;
-  color: var(--secondary);
-  border: 2px solid var(--secondary);
-  transition: ease 1s;
-}
 
-.footer-div p {
-  margin: 0;
-  padding: 0.5rem;
-}
-
-.footer-img {
-  opacity: 0.8;
-}
-
-.footer-img:hover {
-  opacity: 1;
-  transition: 0.5s ease-in;
-  filter: grayscale(0%);
+/*Button*/
+.btn{
+  font-family: 'Nunito' !important;
+  margin-top: '2rem' !important;
+  width: 100%;
 }
 
 .btn-primary {
@@ -104,16 +83,13 @@ input{
   font-weight: 600 !important;
   color: #ffffff !important;
   border-radius: 30px !important;
-  font-family: 'Nunito' !important;
-  margin-top: '2rem' !important;
-  width: 100%;
   box-shadow: 0px 10px 18px var(--primary);
 /*  box-shadow: 0px 10px 30px 0px #23A036;*/
 }
 
 .btn-primary:hover {
   background-color: var(--secondary) !important;
-  color: #ffff !important;
+  color: #646369 !important;
 }
 
 .btn-second {
@@ -121,9 +97,6 @@ input{
   font-weight: 600 !important;
   color: var(--primary) !important;
   border-radius: 30px !important;
-  font-family: 'Nunito' !important;
-  margin-top: '2rem' !important;
-  width: 100%;
 }
 
 .btn-second:hover {
@@ -131,6 +104,8 @@ input{
   color: #646369 !important;
 }
 
+
+/*Profil Hero*/
 .img-profil {
   background: #ffffff;
   box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
@@ -142,7 +117,6 @@ input{
 
 .img-profil:hover{
   transform: scale(1.1);
-  transition: 1s ease;
 }
 
 .setskill:hover {
@@ -186,7 +160,6 @@ input{
   opacity: 1;
   box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
   margin-top: -0.5rem;
-  transition: 1s ease;
   transform: scale(1.1);
 }
 
@@ -213,7 +186,6 @@ input{
   opacity: 1;
 }
 
-
 .shadow {
   box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
   border: 1px solid ;
@@ -224,21 +196,19 @@ input{
 .shadow:hover {
   box-shadow: none;
   border: 1px solid var(--primary);
-  transition: 1s ease;
 }
 
+
+/*About*/
 .about:hover {
   box-shadow: 0px 10px 18px rgba(17, 19, 35, 0.08);
   border-radius: 10px;
-  transition: 1s ease;
 }
 
 .about:hover .medsos{
   opacity: 1;
   box-shadow: none;
-  transition: 1s ease;
 }
-
 
 .about-h3::before {
   content: '';
@@ -283,7 +253,6 @@ input{
   opacity: 1;
   box-shadow: none;
   margin-top: -0.5rem;
-  transition: 1s ease;
 }
 
 .skill h4 {
@@ -300,8 +269,7 @@ input{
   width: 100% !important;
   height: 0;
   transition: .5s ease;
-/*  background: rgba(255, 255, 255, 0.9);*/
-  background-image: linear-gradient(to top, rgba(255, 203, 45, 1), rgba(35, 160, 54, 0.4));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
   color: #f1f1f1; 
   opacity:0;
   font-size: 1rem;

@@ -101,7 +101,7 @@ function Hero() {
           {icon.map((item, index) => (
             <div className='medsos' key={index}>
               <a href={item.url} target='_blank' rel='noreferrer'>
-                <img src={item.icon} alt='profil' width='80%' />
+                <img src={item.icon} alt='profil' className="hero-icon" width='80%' />
               </a>
             </div>
           ))}
@@ -110,7 +110,7 @@ function Hero() {
         <Grid container justifyContent='center' style={{ margin: '2rem 0 0' }}>
           <Grid item xs={12} md={5} lg={2} style={{ margin: '.5rem 1rem' }}>
           <a href="#portfolio">
-            <Button size='large' variant='outlined' className='btn-second'>
+            <Button size='large' variant='outlined' className='btn btn-second'>
               See my work
             </Button>
             </a>
@@ -118,7 +118,7 @@ function Hero() {
 
           <Grid item xs={12} md={5} lg={2} style={{ margin: '.5rem 1rem' }}>
           <a href="#hire">
-            <Button size='large' variant='contained' className='btn-primary'>
+            <Button size='large' variant='contained' className='btn btn-primary'>
               Hire Me &nbsp; <ArrowForwardIosRoundedIcon />
             </Button>
           </a>
