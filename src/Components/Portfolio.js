@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Grid, Container, Button } from '@material-ui/core';
-// import kickin from '../Images/landing page.png';
 import japri from '../Images/portfolio/Japri.png';
 import portoWeb from '../Images/portfolio/Portfolio.png';
 import thesis from '../Images/portfolio/Thesis.png';
@@ -34,6 +33,7 @@ const content = [
   },
   {
     img: japri,
+    
     name: 'Japri Corp',
     desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs, and have noble purpose to empowerment',
     url: 'https://japricorp.com/',
@@ -104,10 +104,7 @@ function filterLogo(item) {
 
 const Porfolio = () => {
   const [myWork, setMyWork] = React.useState(content);
-  const [activeAll, setActiveAll] = React.useState(false);
-  const [activeUi, setActiveUi] = React.useState(false);
-  const [activeWeb, setActiveWeb] = React.useState(false);
-  const [activeLogo, setActiveLogo] = React.useState(false);
+  const [active, setActive] = React.useState("all")
 
   const WEB = content.filter(filterWeb);
   const UI = content.filter(filterUi);
@@ -115,37 +112,25 @@ const Porfolio = () => {
 
   async function all() {
     await setMyWork(content);
-    setActiveAll(true);
-    setActiveUi(false);
-    setActiveWeb(false);
-    setActiveLogo(false);
+    setActive("all")
     // console.log(myWork);
   }
 
   async function web() {
     await setMyWork(WEB);
-    setActiveAll(false);
-    setActiveWeb(true);
-    setActiveUi(false);
-    setActiveLogo(false);
+    setActive("web")
     // console.log(myWork);
   }
 
   async function ui() {
     await setMyWork(UI);
-    setActiveAll(false);
-    setActiveWeb(false);
-    setActiveUi(true);
-    setActiveLogo(false);
+    setActive("ui")
     // console.log(myWork);
   }
 
   async function logo() {
     await setMyWork(LOGO);
-    setActiveAll(false);
-    setActiveWeb(false);
-    setActiveUi(false);
-    setActiveLogo(true);
+    setActive("logo")
     // console.log(myWork);
   }
 
@@ -178,8 +163,8 @@ const Porfolio = () => {
             <Button
               onClick={all}
               size='large'
-              variant={activeAll === true ? 'contained' : 'outlined'}
-              className={activeAll === true ? 'btn btn-primary' : 'btn btn-second'}
+              variant={active === "all" ? 'contained' : 'outlined'}
+              className={active === "all" ? 'btn btn-primary' : 'btn btn-second'}
             >
               All
             </Button>
@@ -189,8 +174,8 @@ const Porfolio = () => {
             <Button
               onClick={web}
               size='large'
-              variant={activeWeb === true ? 'contained' : 'outlined'}
-              className={activeWeb === true ? 'btn btn-primary' : 'btn btn-second'}
+              variant={active === "web" ? 'contained' : 'outlined'}
+              className={active === "web" ? 'btn btn-primary' : 'btn btn-second'}
             >
               Web Development
             </Button>
@@ -200,8 +185,8 @@ const Porfolio = () => {
             <Button
               onClick={ui}
               size='large'
-              variant={activeUi === true ? 'contained' : 'outlined'}
-              className={activeUi === true ? 'btn btn-primary' : 'btn btn-second'}
+              variant={active === "ui" ? 'contained' : 'outlined'}
+              className={active === "ui" ? 'btn btn-primary' : 'btn btn-second'}
             >
               UI/UX Design
             </Button>
@@ -211,8 +196,8 @@ const Porfolio = () => {
             <Button
               onClick={logo}
               size='large'
-              variant={activeLogo === true ? 'contained' : 'outlined'}
-              className={activeLogo === true ? 'btn btn-primary' : 'btn btn-second'}
+              variant={active === "logo" ? 'contained' : 'outlined'}
+              className={active === "logo" ? 'btn btn-primary' : 'btn btn-second'}
             >
               Logo Design
             </Button>

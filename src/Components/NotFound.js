@@ -10,6 +10,7 @@ const NotFound = () => {
   function handleClick() {
     history.push('/');
   }
+  
   return (
     <React.Fragment>
       <Container maxWidth='lg'>

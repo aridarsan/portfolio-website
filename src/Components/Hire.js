@@ -52,7 +52,6 @@ const Hire = () => {
   const pesan3 = "%0A" + "Messages%20%3A%20" + encodeURIComponent(messages);
 
   const url = wa + pesan1 + pesan2 + pesan3
-  // console.log(name.length)
 
   return (
     <React.Fragment>
