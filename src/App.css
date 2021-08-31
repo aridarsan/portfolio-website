@@ -334,12 +334,11 @@ input:hover{
   margin: 0.3rem;
 }
 
-
 /*Mobile*/
 @media (max-width: 600px) {
   html {
-    /*font-size: 62.5%;*/
-     font-size: 75%; 
+    font-size: 62.5%;
+    /* font-size: 75%; */
   } /*10px*/
 
   body {
