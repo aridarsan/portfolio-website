@@ -43,7 +43,7 @@ const icon = [
     icon: email,
   },
   {
-    url: 'https://id.linkedin.com/aridarsan',
+    url: 'https://www.linkedin.com/in/aridarsan',
     icon: linkedin,
   },
 ];
