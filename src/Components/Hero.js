@@ -5,7 +5,7 @@ import { Grid, Container, Button } from '@material-ui/core';
 import ari from '../Images/ari.png';
 import facebook from '../Images/Icon/facebook.svg';
 import instagram from '../Images/Icon/instagram.svg';
-import whatsapp from '../Images/Icon/whatsapp.svg';
+// import whatsapp from '../Images/Icon/whatsapp.svg';
 import twitter from '../Images/Icon/twitter.svg';
 import dribbble from '../Images/Icon/dribbble.svg';
 import github from '../Images/Icon/github.svg';
@@ -22,10 +22,10 @@ const icon = [
     url: 'https://instagram.com/ari_darsan',
     icon: instagram,
   },
-  {
-    url: 'https://wa.me/6281222288153',
-    icon: whatsapp,
-  },
+  // {
+  //   url: 'https://wa.me/6281222288153',
+  //   icon: whatsapp,
+  // },
   {
     url: 'https://twitter.com/darsan_ari',
     icon: twitter,
