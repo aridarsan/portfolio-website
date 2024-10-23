@@ -9,6 +9,8 @@ import ayongetrip from '../Images/portfolio/ayongetrip.png';
 import CDU from '../Images/portfolio/CDU.png';
 import kebumen from '../Images/portfolio/kebumen.png';
 import Login from '../Images/portfolio/Login.png';
+import kbbi from '../Images/portfolio/kbbi.png';
+import gemercik from '../Images/portfolio/gemercik.png';
 // import semipro from '../Images/portfolio/semipro.png';
 // import tujuhsembilan from '../Images/portfolio/tujuhsembilan.png';
 
@@ -51,6 +53,20 @@ const content = [
     name: 'Japri Corp Mobile App',
     desc: 'A multifunctional start-up platform that wants to be a solution for students in fulfilling their needs, and have noble purpose to empowerment',
     url: 'https://bit.ly/japri-app-deck',
+    cat: 'ui',
+  },
+  {
+    img: kbbi,
+    name: 'Redesign KBBI',
+    desc: 'KBBI (Kamus Besar Bahasa Indonesia) merupakan sebuah kamus Bahasa yang menyediakan berbagai macam Bahasa yang ada di Indonesia dan diterbitkan oleh Kemendikbud',
+    url: 'https://docs.google.com/presentation/d/1Ie9YqWzksXOz_Ks7Qmf3zsntbAtbx5aZ/edit?rtpof=true',
+    cat: 'ui',
+  },
+  {
+    img: gemercik,
+    name: 'Redesign Gemercik Media App',
+    desc: 'Gemercik Media merupakan aplikasi yang menyajikan berita-berita seputar Universitas Siliwangi',
+    url: 'https://www.instagram.com/p/Ccc4Q7hvLoC/',
     cat: 'ui',
   },
   {
