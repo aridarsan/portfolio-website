@@ -44,7 +44,7 @@ const Hire = () => {
 	const [order, setOrder] = React.useState("");
 	const [messages, setMessages] = React.useState("")
 
-  const wa = "https://wa.me/6281222288153?text="
+  const wa = "https://wa.me/6285156549458?text="
   const pesan1 = "Name%20%3A%20" + encodeURIComponent(name);
   // eslint-disable-next-line
   const pesan2 = "%0A" + "Order%20%3A%20" + encodeURIComponent(order);
@@ -185,7 +185,7 @@ const Hire = () => {
           </Grid>
 
           <Grid item style={{ borderRadius: "50px", margin: "1rem" }} className="shadow hire">
-          <a href="https://wa.me/6281222288153" target="_blank" rel="noreferrer">
+          <a href="https://wa.me/6285156549458" target="_blank" rel="noreferrer">
             <Grid container alignItems="center">
               <Grid item>
                 <div
@@ -197,7 +197,7 @@ const Hire = () => {
               </Grid>
 
               <Grid item>
-                <h4 style={{margin: "0 2rem 0 1rem"}}>081222288153</h4>
+                <h4 style={{margin: "0 2rem 0 1rem"}}>085156549458</h4>
               </Grid>
             </Grid>
             </a>
